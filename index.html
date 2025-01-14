@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semester 3 Mark Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="markcalc.js"></script>
+    <link rel="stylesheet" href="markcalc.css">
+    <link rel="icon" type="image/png" href="pics/icons8-calculator-32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+      <div id="en">
+      
+        <div class="container">
+    <h1>Semester 3 Mark Calculator</h1>
+    <h2>Second year students Of Hydrocarbons: Automation Industrial Processes</h2>
+<img class="img1" src="pics/1736345613170.jpg" alt="">
+<img class="img2" src="pics/Logo-webpage.png" alt="">
+<div class="flex-container">
+</div>
+<fieldset><legend>The Modules</legend>
+
+    <form id="markForm" onsubmit="calculateMarks(); return false;" >
+        <label for="elec_ex">Electrotechnique 1 Exam:</label>
+        <input type="number" id="elec_ex" name="elec_ex" step="0.25">
+        <label for="elec_tp">Electrotechnique TP:</label>
+        <input type="number" id="elec_tp" name="elec_tp" step="0.25">
+        <label for="math_ex">Math analyse Exam</label>
+        <input type="number" id="math_ex" name="math_ex" step="0.25">
+        <label for="math_td">Math analyse TD:</label>
+        <input type="number" id="math_td" name="math_td" step="0.25">
+        <label for="prob_ex">Prob & Stat Exam:</label>
+        <input type="number" id="prob_ex" name="prob_ex" step="0.25">
+        <label for="prob_td">Prob & Stat TD:</label>
+        <input type="number" id="prob_td" name="prob_td" step="0.25">
+        <label for="mec_ex">Mecanique Rationnelle Exam:</label>
+        <input type="number" id="mec_ex" name="mec_ex" step="0.25">
+        <label for="mec_td">Mecanique Rationnelle TD:</label>
+        <input type="number" id="mec_td" name="mec_td" step="0.25">
+        <label for="vom_ex">VOM Exam:</label>
+        <input type="number" id="vom_ex" name="vom_ex" step="0.25">
+        <label for="vom_td">VOM  TD:</label>
+        <input type="number" id="vom_td" name="vom_td" step="0.25">
+        <label for="vom_tp">VOM TP:</label>
+        <input type="number" id="vom_tp" name="vom_tp" step="0.25">
+        <label for="prog_ex">Langage de programmation Exam:</label>
+        <input type="number" id="prog_ex" name="prog_ex" step="0.25">
+        <label for="prog_td">Langage de programmation TD:</label>
+        <input type="number" id="prog_td" name="prog_td" step="0.25">
+        <label for="prog_tp">Langage de programmation TP:</label>
+        <input type="number" id="prog_tp" name="prog_tp" step="0.25">
+        <label for="pip_ex">Procedes Industriels et petroliers Exam:</label>
+        <input type="number" id="pip_ex" name="pip_ex" step="0.25">
+        <label for="des_ex">Dessin technique Exam:</label>
+        <input type="number" id="des_ex" name="des_ex" step="0.25">
+        <label for="eng">English Exam:</label>
+        <input type="number" id="eng" name="eng" step="0.25">
+    </fieldset>
+        <button type="submit" id="calculateButton">Calculate</button>
+    </form>
+
+    <p id="result"></p>
+    <br>
+        <div class="footer">
+            <a href="https://www.facebook.com/2412111lvm0602/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/7amidoz_002/" target="_blank" class="fa fa-instagram"></a>
+            
+        <p><mark>Email: dev.mahdi.djafer@gmail.com</mark></p>
+        <p><mark>Univ Email: MAHDIDJAFER@univ-boumerdes.dz</mark></p>
+        </div>
+        </div>
+    </div>  
