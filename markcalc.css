@@ -265,7 +265,7 @@ mark{
     0%,100%{ transform: scale(1);}
     50%{ transform: scale(1.01);}
   }
-@media (max-width:1110px){
+@media (max-width:1000px){
     .container .img1{
         position: absolute;
         width: 17%;
