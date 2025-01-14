@@ -265,3 +265,26 @@ mark{
     0%,100%{ transform: scale(1);}
     50%{ transform: scale(1.01);}
   }
+@media (max-width:1110px){
+    .container .img1{
+        position: absolute;
+        width: 17%;
+        opacity: 0.9;
+        top: 250px;
+        margin-right: 70%;
+        z-index: 1;
+        box-shadow: 0 0 20px 0 #3B7E20CC;
+        
+    }
+    .container .img2{
+        position: absolute;
+        display: block;
+        width: 15%;
+        margin-left: 70%;
+        opacity: 0.8;
+        top: 250px;
+        border-radius: 100px 100px;
+        box-shadow: 0 0 20px 0 rgb(184, 76, 33);
+    }
+    
+}
