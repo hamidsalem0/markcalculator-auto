@@ -29,7 +29,10 @@ function calculateMarks() {
   // Display the result
   document.getElementById('result').innerHTML = 'Your semester average is: ' + average.toFixed(2);
 }
-
+function dismissMessage() {
+  const entryMessage = document.getElementById('entry-message');
+  entryMessage.style.display = 'none';
+}
 
 
 
