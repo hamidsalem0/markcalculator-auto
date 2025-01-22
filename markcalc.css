@@ -143,8 +143,7 @@ fieldset legend:disabled {
    user-select: none;
    animation: pulse 10s infinite;
    text-align: center;
-   width: fit-content;
-   height: fit-content;
+   
    position: relative;
 }
 .container h2{
@@ -154,12 +153,10 @@ fieldset legend:disabled {
    margin: 10px;
    border-radius: 20px;
    color: whitesmoke;
-   user-select: none;
    animation: pulse1 5s infinite;
    text-align: center;
-   width: fit-content;
-   height: fit-content;
-   position: relative;
+   
+   position:relative;
    text-wrap: balance;
 }
  input{
@@ -270,6 +267,7 @@ fieldset legend:disabled {
     width: 1000px; /* Set a fixed width */
   margin: 0 auto;
   user-select:text;
+  z-index: 99;
     
 }
 mark{
@@ -341,8 +339,8 @@ mark{
   }
   .arrow {
     position: absolute;
-    left: 235px;
-    top: 27px;
+    margin-left: 230px;
+    margin-top: 20px;
     transform: translate(-50%, -50%);
     transform: rotate(90deg);
     cursor:grabbing;
@@ -350,8 +348,8 @@ mark{
 
 .arrow span {
     display: block;
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 20px;
+    height: 20px;
     border-bottom: 5px solid white;
     border-right: 5px solid white;
     transform: rotate(45deg);
@@ -380,7 +378,7 @@ mark{
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
-  @media (max-width:1000px) {
+@media (max-width:1000px) {
     #entry-message {
       position: fixed;
       top: 0;
@@ -413,8 +411,8 @@ svg {
   width: 128px;
   height: 128px;
   position: absolute ;
-  right: 200px;
-  z-index: 100;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 /* SMOKE */
@@ -433,7 +431,7 @@ svg {
 @keyframes smoke {
   0% { stroke-dasharray: 0, 10; }
   50% { stroke-dasharray: 10, 0; }
-  100% { stroke-dasharray: 10, 0; opacity: 0; }
+  100% { stroke-dasharray: 10, 0; opacity: 0; } 
 }
 
 /* WRITING */
