@@ -66,7 +66,7 @@ function calculateMarks_s4() {
   document.getElementById('result_s4').innerHTML = 'Your semester average is: ' + average_s4.toFixed(2);
 }
 function switchToS4() {
-  window.location.href = "index_S4.html";
+  window.location.href = "index_s4.html";
 }
 function switchToS3() {
   window.location.href = "index.html";
