@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Semester 3 Mark Calculator</title>
+    <title>Semester 4 Mark Calculator</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="markcalc.js"></script>
@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    
     <div class="semester-selector">
-        <button onclick="switchToS4()">Change Semester "4"</button>
+        <button onclick="switchToS3()">Change Semester "3"</button>
     </div>
     <div id="entry-message">
         <div>
@@ -23,58 +24,60 @@
       <div id="en">
       
         <div class="container">
-    <h1>Semester 3 Mark Calculator</h1>
+            
+    <h1>Semester 4 Mark Calculator</h1>
     <h2>Second year students Of Hydrocarbons: Automation Industrial Processes</h2>
 <img class="img1" src="pics/1736345613170.jpg" alt="univ-boumerdesLogo">
 <img class="img2" src="pics/Logo-webpage.png" alt="FHCLogo">
-<div class="sn">S3</div>
-
+<div class="sn">S4</div>
 <div class="flex-container">
+    
 </div>
 <fieldset><legend>The Modules</legend>
 
-    <form id="markForm" onsubmit="calculateMarks_s3(); return false;" >
-        <label for="elec_ex">Electrotechnique 1 Exam:</label>
-        <input type="number" id="elec_ex" name="elec_ex" step="0.25">
-        <label for="elec_tp">Electrotechnique TP:</label>
-        <input type="number" id="elec_tp" name="elec_tp" step="0.25">
-        <label for="math_ex">Math analyse Exam:</label>
-        <input type="number" id="math_ex" name="math_ex" step="0.25">
-        <label for="math_td">Math analyse TD:</label>
-        <input type="number" id="math_td" name="math_td" step="0.25">
-        <label for="prob_ex">Prob & Stat Exam:</label>
-        <input type="number" id="prob_ex" name="prob_ex" step="0.25">
-        <label for="prob_td">Prob & Stat TD:</label>
-        <input type="number" id="prob_td" name="prob_td" step="0.25">
-        <label for="mec_ex">Mecanique Rationnelle Exam:</label>
-        <input type="number" id="mec_ex" name="mec_ex" step="0.25">
-        <label for="mec_td">Mecanique Rationnelle TD:</label>
-        <input type="number" id="mec_td" name="mec_td" step="0.25">
-        <label for="vom_ex">VOM Exam:</label>
-        <input type="number" id="vom_ex" name="vom_ex" step="0.25">
-        <label for="vom_td">VOM  TD:</label>
-        <input type="number" id="vom_td" name="vom_td" step="0.25">
-        <label for="vom_tp">VOM TP:</label>
-        <input type="number" id="vom_tp" name="vom_tp" step="0.25">
-        <label for="prog_ex">Langage de programmation Exam:</label>
-        <input type="number" id="prog_ex" name="prog_ex" step="0.25">
-        <label for="prog_td">Langage de programmation TD:</label>
-        <input type="number" id="prog_td" name="prog_td" step="0.25">
-        <label for="prog_tp">Langage de programmation TP:</label>
-        <input type="number" id="prog_tp" name="prog_tp" step="0.25">
-        <label for="pip_ex">Procedes Industriels et petroliers Exam:</label>
-        <input type="number" id="pip_ex" name="pip_ex" step="0.25">
-        <label for="des_ex">Dessin technique Exam:</label>
-        <input type="number" id="des_ex" name="des_ex" step="0.25">
-        <label for="eng">English Exam:</label>
-        <input type="number" id="eng" name="eng" step="0.25">
+    <form id="markForm" onsubmit="calculateMarks_s4(); return false;" >
+        <label for="math5_ex">Math 5 Exam:</label>
+        <input type="number" id="math5_ex" name="math5_ex" step="0.25">
+        <label for="math5_td">Math 5 TD:</label>
+        <input type="number" id="math5_td" name="math5_td" step="0.25">
+        <label for="metho_ex">Method Num Exam:</label>
+        <input type="number" id="metho_ex" name="metho_ex" step="0.25">
+        <label for="metho_td">Method Num TD:</label>
+        <input type="number" id="metho_td" name="metho_td" step="0.25">
+        <label for="meselec_ex">Mesures Elec Exam:</label>
+        <input type="number" id="meselec_ex" name="meselec_ex" step="0.25">
+        <label for="meselec_td">Mesures Elec TD:</label>
+        <input type="number" id="meselec_td" name="meselec_td" step="0.25">
+        <label for="meselec_tp">Mesures Elec TP:</label>
+        <input type="number" id="meselec_tp" name="meselec_tp" step="0.25">
+        <label for="rss_ex">Representaion des Sys&sim Exam:</label>
+        <input type="number" id="rss_ex" name="rss_ex" step="0.25">
+        <label for="rss_td">Representaion des Sys&sim TD:</label>
+        <input type="number" id="rss_td" name="rss_td" step="0.25">
+        <label for="maapp_ex">Maths App Exam:</label>
+        <input type="number" id="maapp_ex" name="maapp_ex" step="0.25">
+        <label for="maapp_td">Maths App TD:</label>
+        <input type="number" id="maapp_td" name="maapp_td" step="0.25">
+        <label for="electech2_ex">Electrotechnique 2 Exam:</label>
+        <input type="number" id="electech2_ex" name="electech2_ex" step="0.25">
+        <label for="electech2_td">Electrotechnique 2 TD:</label>
+        <input type="number" id="electech2_td" name="electech2_td" step="0.25">
+        <label for="elecfo_ex">Electronique Fondamentale Exam:</label>
+        <input type="number" id="elecfo_ex" name="elecfo_ex" step="0.25">
+        <label for="elecfo_td">Electronique Fondamentale TD:</label>
+        <input type="number" id="elecfo_td" name="elecfo_td" step="0.25">
+        <label for="elecfo_tp">Electronique Fondamentale TP:</label>
+        <input type="number" id="elecfo_tp" name="elecfo_tp" step="0.25">
+        <label for="teco_ex">Technique EC Exam:</label>
+        <input type="number" id="teco_ex" name="teco_ex" step="0.25">
+        <label for="eng_s4">Technical English Exam:</label>
+        <input type="number" id="eng_s4" name="eng_s4" step="0.25">
         
     </fieldset>
         <button type="submit" id="calculateButton">Calculate</button>
-        
     </form>
 
-    <p id="result_s3"></p>
+    <p id="result_s4"></p>
     <br>
         <div class="footer">
             <a href="https://www.facebook.com/2412111lvm0602/" target="_blank" class="fa fa-facebook"></a>
@@ -126,17 +129,14 @@
     </g>
     </g>
     </svg>
-  
         <p><mark>Email: dev.mahdi.djafer@gmail.com</mark></p>
         <p><mark>Univ Email: MAHDIDJAFER@univ-boumerdes.dz</mark></p>
         </div>
         </div>
     </div>
-      
     <div class="arrow">
         <span></span>
         <span></span>
         <span></span>
     </div>
-    
-    </body>
+</body> 
