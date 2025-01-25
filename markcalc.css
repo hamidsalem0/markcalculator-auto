@@ -459,4 +459,120 @@ svg {
   0% { width: 0px; opacity: 1;}
   100% { width: 14px; opacity: 1;}
 }
+#earth {
+  filter: blur(3px);
+  margin-left: 400px;
+    margin-top: 2500px;
+  z-index: -100;
+  width: 300px;
+  position: absolute;
+  height: 300px;
+  background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+  border-radius: 50%;
+  background-size: 610px;
+  box-shadow: inset 8px 36px 80px 36px rgba(0, 0, 0, 0.429), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+  animation-name: rotate;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+     -webkit-animation-duration: 12s;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-timing-function: linear;
+}
+@keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 610px 0px;
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 610px 0px;
+  }
+}
 
+
+.container1 {
+  width: 500px;
+  height: 400px;
+  margin: 40px auto;
+  position: absolute;
+  z-index: -100;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.jupiter {
+  left: calc(100% - 400px);
+  margin-left: 300px;
+    margin-top: 100x;
+  width: 400px;
+  height: 400px;
+  padding-left: 5px;
+  position: absolute;
+  background-clip: padding-box;
+  background-image: url(http://maujor.com/labs/jupiter.jpg);
+  animation: rotate infinite linear reverse 10s;
+  filter: blur(3px);
+}
+
+
+.planet:before {
+  position: absolute;
+  left: -5px;
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+}
+
+.jupiter:before {
+  width: 405px;
+  height: 405px;
+  box-shadow: inset 20px 0 20px rgba(0, 0, 0, 0.532);
+  background: linear-gradient(-90deg, transparent 30%, black);
+}
+.moon-background{
+  filter: blur(3px);
+  margin-right: 500px;
+  margin-bottom: 1200px;
+  z-index: -100;
+  width: 250px;
+  position: absolute;
+  height: 250px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url('https://www.solarsystemscope.com/textures/download/2k_moon.jpg');
+  background-repeat: repeat-x;
+  background-size: 110% 100%;
+  opacity: 1;
+  animation-name: moonRotation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards !important;
+  box-shadow: inset -10px 8px 6px -5px #ffffff90, 
+inset 20px -20px 40px 30px rgba(0, 0, 0, 0.735), 7px -6px 14px rgba(255, 255, 255, 0.3215686275);
+}
+@keyframes moonRotation {
+  0% {
+  background-position: 0% 0%;
+  border: 0px solid #00000000;
+}
+50% {
+  background-position: 150% 0%;
+  border: 0px solid #00000000;
+}
+100% {
+  background-position: 300% 0%;
+  border: 0px solid #00000000;
+}
+}
