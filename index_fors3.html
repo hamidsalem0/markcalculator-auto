@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Semester 4 Mark Calculator</title>
+    <title>Semester 3 Mark Calculator</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="markcalcfor.js"></script>
@@ -12,68 +12,71 @@
 </head>
 <body>
     <div class="custom-select">
-        <select id="SemesterSelector" onchange="navigateS()">
-            <option value="" disabled selected>Select The Semester</option>
-            <option class="activeop" value="index_s4.html" >Semester 3</option>
-            <option value="" disabled>Semester 4</option>
-        </select>
-        <br>
-        <select id="SpecialitySelector" onchange="navigateSp()">
-            <option value="" disabled selected>Select The Speciality</option>
-            <option value="index.html" disabled>Automation</option>
-            <option class="activeop" value="index_fors3.html" >Drilling(forage)</option>
-        </select>
+    <select id="SemesterSelector" onchange="navigateS()">
+        <option value="" disabled selected>Select The Semester</option>
+        <option value="index_fors3.html" disabled>Semester 3</option>
+        <option value="" disabled>Semester 4</option>
+    </select>
+    <br>
+    <select id="SpecialitySelector" onchange="navigateSp()">
+        <option value="" disabled selected>Select The Speciality</option>
+        <option class="activeop" value="index.html">Automation</option>
+        <option value="index_fors3.html" disabled>Drilling(forage)</option>
+    </select>
+</div>
+    <div id="en">
+        <div class="container">
     </div>
       <div id="en">
+    
         <div class="container">
             
-    <h1>Semester 4 Mark Calculator</h1>
-    <h2>Second year students Of Hydrocarbons: Automation Industrial Processes</h2>
+    <h1>Semester 3 Mark Calculator</h1>
+    <h2>Second year students Of Hydrocarbons: Drilling Engineering</h2>
+    
 <img class="img1" src="pics/1736345613170.jpg" alt="univ-boumerdesLogo">
 <img class="img2" src="pics/Logo-webpage.png" alt="FHCLogo">
-<div class="sn">S4</div>
+<div class="sn">S3</div>
+
 <div class="flex-container">
-    
 </div>
 <fieldset><legend>The Modules</legend>
 
-    <form id="markForm" onsubmit="calculateMarks_s4(); return false;" >
-        <label for="math5_ex">Math 5 Exam:</label>
-        <input type="number" id="math5_ex" name="math5_ex" step="0.25">
-        <label for="math5_td">Math 5 TD:</label>
-        <input type="number" id="math5_td" name="math5_td" step="0.25">
-        <label for="metho_ex">Method Num Exam:</label>
-        <input type="number" id="metho_ex" name="metho_ex" step="0.25">
-        <label for="metho_td">Method Num TD:</label>
-        <input type="number" id="metho_td" name="metho_td" step="0.25">
-        <label for="meselec_ex">Mesures Elec Exam:</label>
-        <input type="number" id="meselec_ex" name="meselec_ex" step="0.25">
-        <label for="meselec_td">Mesures Elec TD:</label>
-        <input type="number" id="meselec_td" name="meselec_td" step="0.25">
-        <label for="meselec_tp">Mesures Elec TP:</label>
-        <input type="number" id="meselec_tp" name="meselec_tp" step="0.25">
-        <label for="rss_ex">Representaion des Sys&sim Exam:</label>
-        <input type="number" id="rss_ex" name="rss_ex" step="0.25">
-        <label for="rss_td">Representaion des Sys&sim TD:</label>
-        <input type="number" id="rss_td" name="rss_td" step="0.25">
-        <label for="maapp_ex">Maths App Exam:</label>
-        <input type="number" id="maapp_ex" name="maapp_ex" step="0.25">
-        <label for="maapp_td">Maths App TD:</label>
-        <input type="number" id="maapp_td" name="maapp_td" step="0.25">
-        <label for="electech2_ex">Electrotechnique 2 Exam:</label>
-        <input type="number" id="electech2_ex" name="electech2_ex" step="0.25">
-        <label for="electech2_td">Electrotechnique 2 TD:</label>
-        <input type="number" id="electech2_td" name="electech2_td" step="0.25">
-        <label for="elecfo_ex">Electronique Fondamentale Exam:</label>
-        <input type="number" id="elecfo_ex" name="elecfo_ex" step="0.25">
-        <label for="elecfo_td">Electronique Fondamentale TD:</label>
-        <input type="number" id="elecfo_td" name="elecfo_td" step="0.25">
-        <label for="elecfo_tp">Electronique Fondamentale TP:</label>
-        <input type="number" id="elecfo_tp" name="elecfo_tp" step="0.25">
-        <label for="teco_ex">Technique EC Exam:</label>
-        <input type="number" id="teco_ex" name="teco_ex" step="0.25">
-        <label for="eng_s4">Technical English Exam:</label>
-        <input type="number" id="eng_s4" name="eng_s4" step="0.25">
+    <form id="markForm" onsubmit="calculateMarks_for3(); return false;" >
+        <label for="forepm_ex">Equation de physique mathematique Exam:</label>
+        <input type="number" id="forepm_ex" name="forepm_ex" step="0.25">
+        <label for="forepm_td">Equation de physique mathematique TD:</label>
+        <input type="number" id="forepm_td" name="forepm_td" step="0.25">
+        <label for="for3math_ex">Math analyse Exam:</label>
+        <input type="number" id="for3math_ex" name="for3math_ex" step="0.25">
+        <label for="for3math_td">Math analyse TD:</label>
+        <input type="number" id="for3math_td" name="for3math_td" step="0.25">
+        <label for="for3prob_ex">Prob & Stat Exam:</label>
+        <input type="number" id="for3prob_ex" name="for3prob_ex" step="0.25">
+        <label for="for3prob_td">Prob & Stat TD:</label>
+        <input type="number" id="for3prob_td" name="for3prob_td" step="0.25">
+        <label for="for3mec_ex">Mecanique Rationnelle Exam:</label>
+        <input type="number" id="for3mec_ex" name="for3mec_ex" step="0.25">
+        <label for="for3mec_td">Mecanique Rationnelle TD:</label>
+        <input type="number" id="for3mec_td" name="for3mec_td" step="0.25">
+        <label for="for3vom_ex">VOM Exam:</label>
+        <input type="number" id="for3vom_ex" name="for3vom_ex" step="0.25">
+        <label for="for3vom_td">VOM  TD:</label>
+        <input type="number" id="for3vom_td" name="for3vom_td" step="0.25">
+        <label for="for3vom_tp">VOM TP:</label>
+        <input type="number" id="for3vom_tp" name="for3vom_tp" step="0.25">
+        <label for="for3prog_ex">Langage de programmation Exam:</label>
+        <input type="number" id="for3prog_ex" name="for3prog_ex" step="0.25">
+        <label for="for3prog_td">Langage de programmation TD:</label>
+        <input type="number" id="for3prog_td" name="for3prog_td" step="0.25">
+        <label for="for3geo_ex">Geologie Petroliere Exam:</label>
+        <input type="number" id="for3geo_ex" name="profor3geo_exg_tp" step="0.25">
+        <label for="for3geo_td">Geologie Petroliere TD:</label>
+        <input type="number" id="for3geo_td" name="for3geo_td" step="0.25">
+        <label for="for3des_ex">Dessin technique Exam:</label>
+        <input type="number" id="for3des_ex" name="for3des_ex" step="0.25">
+        <label for="for3eng">English Exam:</label>
+        <input type="number" id="for3eng" name="for3eng" step="0.25">
         
     </fieldset>
         <button type="submit" id="calculateButton">Calculate</button>
@@ -84,9 +87,10 @@
           <div class="moon-background"></div>
     </form>
 
-    <p id="result_s4"></p>
+    <p id="for3_result"></p>
     <br>
         <div class="footer">
+            
             <a href="https://www.facebook.com/2412111lvm0602/" target="_blank" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/7amidoz_002/" target="_blank" class="fa fa-instagram"></a>
             <!-- Designed with Figma -->
@@ -136,10 +140,13 @@
     </g>
     </g>
     </svg>
+  
         <p><mark>Email: dev.mahdi.djafer@gmail.com</mark></p>
         <p><mark>Univ Email: MAHDIDJAFER@univ-boumerdes.dz</mark></p>
         </div>
         </div>
     </div>
+      
+   
     
-</body> 
+    </body>

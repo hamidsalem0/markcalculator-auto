@@ -192,7 +192,7 @@ fieldset legend:disabled {
     font-size: 22px;
     text-wrap: nowrap;
 }
-#result_s3, #result_s4{
+#for3_result ,#result_s3, #result_s4{
     background: rgb(184, 76, 33);
     color: whitesmoke;
     width: fit-content;
@@ -214,6 +214,10 @@ fieldset legend:disabled {
     filter: blur(0);
     transition: 0.3s;
 }
+#for3_result:hover{
+  filter: blur(0);
+  transition: 0.3s;
+}
 .img1{
     position: absolute;
     width: 200px;
@@ -221,7 +225,7 @@ fieldset legend:disabled {
     top: 250px;
     margin-right: 800px;
     z-index: 1;
-    box-shadow: 0 0 20px 0 #3B7E20CC;
+    box-shadow: 0 0 20px 0 rgba(0, 72, 46, 0.929);
     max-width: none; /* Prevent image scaling */
     
 }
@@ -306,65 +310,6 @@ mark{
     50%{ transform: scale(1.01);}
   }
   
-
-#entry-message {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000; /* Ensures it is above all other content */
-    text-align: center;
-    padding: 20px;
-  }
-
-  #entry-message button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #4CAF50;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  #entry-message button:hover {
-    background: #45a049;
-  }
-  .arrow {
-    position: absolute;
-    margin-left: 230px;
-    margin-top: 20px;
-    transform: translate(-50%, -50%);
-    transform: rotate(90deg);
-    cursor:grabbing;
-}
-
-.arrow span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-
-.arrow span:nth-child(2) {
-    animation-delay: -0.2s;
-}
-
-.arrow span:nth-child(3) {
-    animation-delay: -0.4s;
-}
-
 @keyframes animate {
     0% {
         opacity: 0;
@@ -378,35 +323,6 @@ mark{
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
-@media (max-width:1000px) {
-    #entry-message {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-      color: white;
-      display: flex;
-      align-items: start;
-      justify-content: left;
-      z-index: 1000; /* Ensures it is above all other content */
-      text-align: left;
-      text-wrap: balance;
-      padding: 20px;
-    }
-    #entry-message button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #4CAF50;
-      border: none;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-  }
-  
 svg {
   width: 128px;
   height: 128px;
@@ -575,4 +491,47 @@ inset 20px -20px 40px 30px rgba(0, 0, 0, 0.735), 7px -6px 14px rgba(255, 255, 25
   background-position: 300% 0%;
   border: 0px solid #00000000;
 }
+}
+.custom-select {
+  width: fit-content;
+  position: absolute;
+}
+
+.custom-select select {
+  appearance: none;
+  width: fit-content;
+  font-size: 15px;
+  padding: 0.675em 4.5em 0.675em 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: rgba(0, 72, 46, 0.929);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.custom-select::before,
+.custom-select::after {
+  --size: 7px;
+  content: "";
+  position: absolute;
+  right: 1rem;
+  pointer-events: none;
+}
+
+.custom-select::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 25%;
+}
+
+.custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 70%;
+}
+.activeop{
+  color: green;
 }

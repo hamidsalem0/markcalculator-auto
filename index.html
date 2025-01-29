@@ -10,24 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="semester-selector">
-        <button onclick="switchToS4()">Change Semester "4"</button>
+    <div class="custom-select">
+        <select id="SemesterSelector" onchange="navigateS()">
+            <option value="" disabled selected>Select The Semester</option>
+            <option value="index.html" disabled>Semester 3</option>
+            <option class="activeop" value="index_s4.html">Semester 4</option>
+        </select>
+        <br>
+        <select id="SpecialitySelector" onchange="navigateSp()">
+            <option value="" disabled selected>Select The Speciality</option>
+            <option value="index.html" disabled>Automation</option>
+            <option class="activeop" value="index_fors3.html" >Drilling(forage)</option>
+        </select>
     </div>
-    <div id="en">
-        <div class="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
         <div class="container">
-    <div id="entry-message">
-        <div>
-          <h1>Remark!!!</h1>
-          <p><strong>zoom out</strong> If your using a phone</p>
-          <button onclick="dismissMessage()">Enter</button>
-        </div>
-        
-      </div>
     </div>
       <div id="en">
     

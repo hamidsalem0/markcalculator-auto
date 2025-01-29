@@ -29,10 +29,7 @@ function calculateMarks_s3() {
   // Display the result
   document.getElementById('result_s3').innerHTML = 'Your semester average is: ' + average_s3.toFixed(2);
 }
-function dismissMessage() {
-  const entryMessage = document.getElementById('entry-message');
-  entryMessage.style.display = 'none';
-}
+
 // Calculate semester 4 marks 
 function calculateMarks_s4() {
   event.preventDefault();
@@ -65,11 +62,19 @@ function calculateMarks_s4() {
   // Display the result
   document.getElementById('result_s4').innerHTML = 'Your semester average is: ' + average_s4.toFixed(2);
 }
-function switchToS4() {
-  window.location.href = "index_s4.html";
+function navigateS() {
+  const selector = document.getElementById('SemesterSelector');
+  const selectedPage = selector.value;
+  if (selectedPage) {
+      window.location.href = selectedPage; // Redirect to the selected page
+  }
 }
-function switchToS3() {
-  window.location.href = "index.html";
+function navigateSp() {
+  const selector = document.getElementById('SpecialitySelector');
+  const selectedPage = selector.value;
+  if (selectedPage) {
+      window.location.href = selectedPage; // Redirect to the selected page
+  }
 }
 
 
