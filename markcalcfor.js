@@ -24,7 +24,7 @@ function calculateMarks_for3() {
     var for3eng = parseFloat(document.getElementById('for3eng').value);
     // Perform the calculation
     var for3total = ((forepm_ex+forepm_td)/2) * 2.5 + ((for3math_ex+for3math_td)/2)*2 + (for3prob_ex+for3prob_td) +
-    ((for3mec_ex+for3mec_td)/2)*2 + ((for3vom_ex+for3vom_td+for3vom_tp)/3) * 2.5 +
+    ((for3mec_ex+for3mec_td)/2)*2 + ((for3vom_ex+((for3vom_td+for3vom_tp)/2))/2) * 2.5 +
     ((for3geo_ex+for3geo_td)/2)*2 + for3des_ex + for3eng + (for3prog_ex+for3prog_td)/2;
     var for3average = for3total / 16;
   

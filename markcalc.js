@@ -23,7 +23,7 @@ function calculateMarks_s3() {
   var eng = parseFloat(document.getElementById('eng').value);
   // Perform the calculation
   var total = ((elec_ex + elec_tp) / 2) * 2 + ((math_ex + math_td) / 2) * 2 + ((prob_ex + prob_td) / 2) * 2
-  + des_ex + pip_ex + eng+  ((mec_ex+mec_td) / 2) * 2 + ((vom_ex + vom_td + vom_tp) / 3 ) * 2.5 + ((prog_ex+prog_td+prog_tp)/3)
+  + des_ex + pip_ex + eng+  ((mec_ex+mec_td) / 2) * 2 + ((vom_ex + ((vom_td + vom_tp)/2)) / 2 ) * 2.5 + ((prog_ex+((prog_td+prog_tp)/2))/2)
   var average_s3 = total / 14.5;
 
   // Display the result
